@@ -1,19 +1,20 @@
 configuration {
-	modes: "window,drun,run";
-	font: "JetBrainsMono Nerd Font 12";
-	show-icons: true;
-	icon-theme: "Papirus";
-	display-window: "Window";
-	display-run: "Binary";
-	display-drun: "Application";
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
+    modes: "window,drun,run,monitor";
+    font: "JetBrainsMono Nerd Font 12";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-window: "Window";
+    display-run: "Binary";
+    display-drun: "Application";
+    display-monitor: "Monitor setup";
+    timeout {
+        action: "kb-cancel";
+        delay:  0;
+    }
+    filebrowser {
+        directories-first: true;
+        sorting-method:    "name";
+    }
 }
-@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
 
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
