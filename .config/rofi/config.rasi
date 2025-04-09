@@ -3,10 +3,10 @@ configuration {
     font: "JetBrainsMono Nerd Font 12";
     show-icons: true;
     icon-theme: "Papirus";
-    display-window: "Window";
-    display-run: "Binary";
-    display-drun: "Application";
-    display-monitor: "Monitor setup";
+    display-window: "🗂️ Window";
+    display-run: "📦 Binary";
+    display-drun: "🚀 Application";
+    display-monitor: "🖵 Monitor setup";
     timeout {
         action: "kb-cancel";
         delay:  0;
