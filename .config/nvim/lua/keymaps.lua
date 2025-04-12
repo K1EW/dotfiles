@@ -41,6 +41,7 @@ keymap("v", "d", "\"_d", options)
 -- Reserve register after change
 keymap("n", "cw", "\"_cw", options)
 keymap("n", "ci", "\"_ci", options)
+keymap("n", "ct", "\"_ct", options)
 keymap("n", "ca", "\"_ca", options)
 keymap("v", "c", "\"_c", options)
 

@@ -18,6 +18,8 @@ return {
                     "vimdoc",
                     "cpp",
                     "python",
+                    "markdown",
+                    "markdown_inline"
                 },
                 highlight = {
                     enable = true,
