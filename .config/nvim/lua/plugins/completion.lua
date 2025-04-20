@@ -1,5 +1,15 @@
 return {
     {
+        "github/copilot.vim",
+        config = function()
+            vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+              expr = true,
+              replace_keycodes = false
+            })
+            vim.g.copilot_no_tab_map = true
+        end
+    },
+    {
         -- Snippet engine
         "L3MON4D3/LuaSnip",
         dependencies = {
@@ -72,7 +82,7 @@ return {
                     { name = "luasnip" },
                     { name = "nvim_lsp" },
                     { name = "nvim_lua" },
-                    { name = "buffer",  keyword_length = 5 },
+                    { name = "buffer", keyword_length = 5 },
                     { name = "path" },
                 }),
                 window = {

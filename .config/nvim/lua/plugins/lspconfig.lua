@@ -4,13 +4,14 @@ return {
         local lspconfig = require("lspconfig")
         local util = require("lspconfig.util")
 
-        -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
         lspconfig.clangd.setup({
             cmd = {
                 "clangd",
                 "--header-insertion=never",
             },
+            capabilities = capabilities;
         })
 
         local options = { noremap = true, silent = true }
