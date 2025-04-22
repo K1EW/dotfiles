@@ -2,9 +2,17 @@ return {
     {
         "github/copilot.vim",
         config = function()
-            vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
-              expr = true,
-              replace_keycodes = false
+            vim.keymap.set("i", "<C-Space>", function()
+                local cmp = require("cmp")
+                if cmp.visible() then
+                    return vim.api.nvim_replace_termcodes("<C-Space>", true, true, true)
+                else
+                    return vim.fn["copilot#Accept"]("\\<CR>")
+                end
+            end, {
+                expr = true,
+                replace_keycodes = false,
+                silent = true,
             })
             vim.g.copilot_no_tab_map = true
         end
