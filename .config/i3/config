@@ -212,10 +212,12 @@ bar {
     status_command i3blocks
     tray_output HDMI-1
     tray_output eDP-1
+    tray_padding 5
+    separator_symbol "|"
     position top
     colors {
         background $bg
-        separator $yellow
+        separator $gray
         focused_workspace $green $fg $bg
         active_workspace $green $darkgray $fg
         inactive_workspace $darkgray $darkgray $gray
