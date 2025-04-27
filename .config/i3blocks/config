@@ -6,10 +6,15 @@ command=echo " $(date '+%Y %b %d  %H:%M:%S')"
 color=#ebdbb2
 interval=5
 
+[speaker]
+command=$HOME/.config/i3blocks/speaker.py
+interval=60
+signal=1
+
 [network]
 command=$HOME/.config/i3blocks/network.py
 interval=5
 
 [battery]
 command=$HOME/.config/i3blocks/battery.py
-interval=10
+interval=5
