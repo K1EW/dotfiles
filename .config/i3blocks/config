@@ -1,0 +1,15 @@
+separator=true
+separator_block_width=25
+
+[time]
+command=echo " $(date '+%Y %b %d  %H:%M:%S')"
+color=#ebdbb2
+interval=5
+
+[network]
+command=$HOME/.config/i3blocks/network.py
+interval=5
+
+[battery]
+command=$HOME/.config/i3blocks/battery.py
+interval=10
