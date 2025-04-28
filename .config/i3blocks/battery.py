@@ -26,10 +26,10 @@ if __name__ == "__main__":
         status = output[0]
         charge_level = int(output[1][:-1])
 
-        if status == "Full":
+        if status == "Charging":
             print(f"⚡{battery_icon(charge_level)} {charge_level}%")
             print("\n#ebdbb2")
-        elif status == "Discharging":
+        elif status == "Discharging" or "Full":
             print(f"{battery_icon(charge_level)} {charge_level}%")
             if charge_level <= LOW_BATTER:
                 print("\n#fb4934")
