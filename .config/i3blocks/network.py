@@ -15,9 +15,12 @@ if __name__ == "__main__":
         output = [x.split()[1:] for x in output]
 
         is_connected = False
-        for interface, state, connection in output:
+        for connection in output:
+            interface = connection[0]
+            state = connection[1]
+            ssid = connection[2] if len(connection) == 3 else " ".join(connection[2:])
             if state == "connected":
-                print(f"{if_icon(interface)}  {connection}")
+                print(f"{if_icon(interface)}  {ssid}")
                 print("\n#b8bb26")
                 is_connected = True
                 break
