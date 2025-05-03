@@ -233,4 +233,4 @@ exec_always feh --bg-scale $HOME/Pictures/silent_voice_wallpaper.webp
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
-bindsym Print exec flameshot gui
+bindsym Print exec --no-startup-id ksnip --rectarea
