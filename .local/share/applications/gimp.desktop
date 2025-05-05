@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GIMP
+Exec=/home/weerawatw/bin/GIMP.AppImage
+Terminal=false
+Type=Application
+Icon=/home/weerawatw/.local/share/icons/GIMP.png
+Categories=Graphics;

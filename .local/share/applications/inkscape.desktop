@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Inkscape
+Exec=/home/weerawatw/bin/Inkscape.AppImage
+Terminal=false
+Type=Application
+Icon=/home/weerawatw/.local/share/icons/Inkscape.png
+Categories=Graphics;VectorGraphics;
