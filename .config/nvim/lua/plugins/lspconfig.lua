@@ -14,6 +14,28 @@ return {
             capabilities = capabilities;
         })
 
+        lspconfig.pylsp.setup({
+            capabilities = capabilities,
+            settings = {
+                pylsp = {
+                    plugins = {
+                        -- pyflakes: Static analysis tool
+                        pyflakes = {
+                            enabled = false,
+                        },
+                        -- mccabe: Complexity checker
+                        mccabe = {
+                            enabled = false,
+                        },
+                        -- pycodestyle: Code style checker
+                        pycodestyle = {
+                            enabled = false,
+                        },
+                    },
+                },
+            },
+        })
+
         local options = { noremap = true, silent = true }
         vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, options)
         vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, options)
