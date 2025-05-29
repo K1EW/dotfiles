@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=osu! Lazer
 Comment=Best rhythm game ever
-Exec=/home/weerawatw/bin/run-osu
+Exec=prime-run /home/weerawatw/bin/osu.AppImage
 Terminal=false
 Type=Application
 Icon=/home/weerawatw/.local/share/icons/osu!lazer.png
