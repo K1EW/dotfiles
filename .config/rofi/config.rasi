@@ -1,19 +1,19 @@
 configuration {
-    modes: "window,drun,run,monitor";
+    modes: "window,drun,monitor";
     font: "JetBrainsMono Nerd Font 12";
     show-icons: true;
     icon-theme: "Papirus";
     display-window: "🗂️ Window";
-    display-run: "📦 Binary";
     display-drun: "🚀 Application";
-    display-monitor: "🖵 Monitor setup";
+    display-monitor: "🖥️ Monitor setup";
+    kb-mode-next: "Super+Tab";
     timeout {
         action: "kb-cancel";
         delay:  0;
     }
     filebrowser {
         directories-first: true;
-        sorting-method:    "name";
+        sorting-method: "name";
     }
 }
 
