@@ -6,6 +6,11 @@ command=echo " $(date '+%Y %b %d  %H:%M:%S')"
 color=#ebdbb2
 interval=5
 
+[keyboard-layout]
+command=echo "⌨ $(xkblayout-state print '%s')"
+color=#ebdbb2
+interval=5
+
 [speaker]
 command=$HOME/.config/i3blocks/speaker.py
 interval=60
