@@ -9,7 +9,8 @@ interval=5
 [keyboard-layout]
 command=echo "⌨ $(xkblayout-state print '%s')"
 color=#ebdbb2
-interval=5
+interval=60
+signal=2
 
 [speaker]
 command=$HOME/.config/i3blocks/speaker.py

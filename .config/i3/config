@@ -108,9 +108,6 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+f floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -234,3 +231,5 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
 bindsym Print exec --no-startup-id ksnip --rectarea
+
+bindsym $mod+Tab exec --no-startup-id /home/weerawatw/bin/toggle-kblayout.sh
