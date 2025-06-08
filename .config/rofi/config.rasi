@@ -1,6 +1,6 @@
 configuration {
     modes: "window,drun,monitor,emoji";
-    font: "JetBrainsMono Nerd Font 12";
+    font: "JetBrainsMono Nerd Font 14";
     show-icons: true;
     icon-theme: "Papirus";
     display-window: "🗂️ Window";
