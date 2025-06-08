@@ -1,11 +1,12 @@
 configuration {
-    modes: "window,drun,monitor";
+    modes: "window,drun,monitor,emoji";
     font: "JetBrainsMono Nerd Font 12";
     show-icons: true;
     icon-theme: "Papirus";
     display-window: "🗂️ Window";
     display-drun: "🚀 Application";
     display-monitor: "🖥️ Monitor setup";
+    display-emoji: "😃 Emoji picker";
     kb-mode-next: "Super+Tab";
     timeout {
         action: "kb-cancel";
