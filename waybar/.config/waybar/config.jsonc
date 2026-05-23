@@ -6,7 +6,6 @@
 		"margin-left": 5,
 		"margin-right": 5,
 		"modules-left": [
-			"custom/rofi",
 			"hyprland/workspaces",
 			"tray",
 		],
@@ -22,13 +21,6 @@
 			"pulseaudio",
 			"battery"
 		],
-		"custom/rofi": {
-			"format": "<span >󰣇</span>",
-			"on-click": "rofi -show drun -disable-history -show-icons -theme-str 'window { width: 22% ; location: northwest; margin: 10px 0 0 10px; } listview { lines: 20; }'",
-			"on-click-right": "~/.config/custom_scripts/power.sh",
-			"escape": true,
-			"tooltip": false
-		},
 		"hyprland/workspaces": {
 			"disable-scroll": true,
 			"active-only": false,
