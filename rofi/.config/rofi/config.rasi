@@ -1,0 +1,24 @@
+configuration {
+    modes: "drun,monitor:~/.config/rofi/scripts/display_switch.sh";
+    font: "JetBrainsMono Nerd Font 14";
+    show-icons: true;
+    icon-theme: "Papirus";
+
+    display-drun: "🚀 Application";
+	display-monitor: "📺 Monitor Layouts";
+
+    kb-mode-next: "Super+Tab";
+	kb-row-down: "Down,Control+n";
+    kb-row-up: "Up,Control+p";
+
+    timeout {
+        action: "kb-cancel";
+        delay:  0;
+    }
+    filebrowser {
+        directories-first: true;
+        sorting-method: "name";
+    }
+}
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
