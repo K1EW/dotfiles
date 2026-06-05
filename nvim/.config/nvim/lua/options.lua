@@ -19,7 +19,7 @@ vim.opt.cmdheight = 0                   -- Hide command line when not in use
 -- Tabs & Indentation
 vim.opt.expandtab = true                -- Convert tabs to spaces
 vim.opt.smartindent = true              -- Insert indents automatically
-vim.opt.tabstop = 4                     -- 1 tab = 4 spaces
+vim.opt.tabstop = 4                     -- 4 spaces = 1 tab
 vim.opt.shiftwidth = 4                  -- Indent size for autoindent
 
 -- Search & Substitution

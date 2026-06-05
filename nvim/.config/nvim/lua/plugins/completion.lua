@@ -4,7 +4,7 @@ return {
     opts = {
         completion = {
             menu = {
-                auto_show = false,
+                auto_show = true,
                 border = "rounded",
                 winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
             },
