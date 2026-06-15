@@ -2,16 +2,18 @@ return {
     "nvim-treesitter/nvim-treesitter",
     branch = "main",
     init = function()
-        local ensure_installed = { 
-            "lua", 
-            "c", 
-            "cpp", 
-            "html", 
-            "json", 
-            "python", 
-            "markdown", 
-            "markdown_inline" 
+        local ensure_installed = {
+            "lua",
+            "c",
+            "cpp",
+            "html",
+            "json",
+            "python",
+            "haskell",
+            "markdown",
+            "markdown_inline"
         }
+
         -- Diffs against already installed parsers so it doesn't slow down startup
         local already_installed = require("nvim-treesitter.config").get_installed()
         local parsers_to_install = vim.iter(ensure_installed)

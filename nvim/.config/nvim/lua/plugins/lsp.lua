@@ -12,6 +12,7 @@ return {
             "clangd",   -- C & C++
             "html",     -- HTML
             "jsonls",   -- JSON
+            "hls",      -- Haskell
             "pyright",    -- Python
             "marksman", -- Markdown
         }
