@@ -7,3 +7,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Redirect rm to trash-put
 alias rm='trash-put'
+
+[ -f "/home/weerawatw/.ghcup/env" ] && . "/home/weerawatw/.ghcup/env" # ghcup-env

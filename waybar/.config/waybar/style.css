@@ -31,7 +31,7 @@ window#waybar {
 #custom-cpu_temp,
 #custom-cpu_temp.critical,
 #backlight,
-#language,
+#custom-language,
 #pulseaudio,
 #pulseaudio.muted,
 #battery,
@@ -117,7 +117,7 @@ window#waybar {
   border: 2pt solid #f6c657;
 }
 
-#language {
+#custom-language {
   border: 2pt solid #458588;
 }
 
