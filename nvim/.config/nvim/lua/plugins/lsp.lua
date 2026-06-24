@@ -35,6 +35,20 @@ return {
             },
         })
 
+        vim.lsp.config("hls", {
+            settings = {
+                haskell = {
+                    plugin = {
+                        rename = {
+                            config = {
+                                crossModule = true
+                            }
+                        }
+                    }
+                }
+            }
+        })
+
         for _, server_name in ipairs(servers) do
             vim.lsp.enable(server_name)
         end
