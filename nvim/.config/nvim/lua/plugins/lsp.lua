@@ -12,7 +12,6 @@ return {
             "clangd",   -- C & C++
             "html",     -- HTML
             "jsonls",   -- JSON
-            "hls",      -- Haskell
             "pyright",    -- Python
             "marksman", -- Markdown
         }
@@ -33,20 +32,6 @@ return {
                     },
                 },
             },
-        })
-
-        vim.lsp.config("hls", {
-            settings = {
-                haskell = {
-                    plugin = {
-                        rename = {
-                            config = {
-                                crossModule = true
-                            }
-                        }
-                    }
-                }
-            }
         })
 
         for _, server_name in ipairs(servers) do
