@@ -12,8 +12,9 @@ return {
             "clangd",   -- C & C++
             "html",     -- HTML
             "jsonls",   -- JSON
-            "pyright",    -- Python
+            "pyright",  -- Python
             "marksman", -- Markdown
+            "ocamllsp"  -- OCaml
         }
 
         require("mason-lspconfig").setup({

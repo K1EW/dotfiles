@@ -9,9 +9,9 @@ return {
             "html",
             "json",
             "python",
-            "haskell",
             "markdown",
-            "markdown_inline"
+            "markdown_inline",
+            "ocaml"
         }
 
         -- Diffs against already installed parsers so it doesn't slow down startup

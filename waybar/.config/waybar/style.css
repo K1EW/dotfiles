@@ -13,8 +13,8 @@ window#waybar {
   color: #ebdbb2;
   background: none;
   font-family: JetBrainsMono Nerd Font Propo;
-  font-size: 14pt;
-  font-weight: 800;
+  font-size: 12pt;
+  font-weight: 700;
 }
 
 .modules-left,
