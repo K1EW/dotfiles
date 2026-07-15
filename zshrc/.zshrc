@@ -19,3 +19,12 @@ export XMODIFIERS=@im=fcitx
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/weerawatw/.opam/opam-init/init.zsh' ]] || source '/home/weerawatw/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+# >>> conda initialize >>>
+conda() {
+    unset -f conda
+    source ~/miniconda3/etc/profile.d/conda.sh
+    conda "$@"
+}
+# <<< conda initialize <<<
+
