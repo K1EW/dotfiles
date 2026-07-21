@@ -1,16 +1,12 @@
 {
     "layer": "top",
+    "position": "bottom",
     "height": 20,
     "spacing": 4,
-    "margin-top": 1,
-    "margin-left": 5,
-    "margin-right": 5,
+    "margin": 0,
     "modules-left": [
         "hyprland/workspaces",
         "tray"
-    ],
-    "modules-center": [
-        "clock"
     ],
     "modules-right": [
         "network",
@@ -19,6 +15,7 @@
         "backlight",
         "custom/language", 
         "pulseaudio",
+        "clock",
         "battery"
     ],
     "hyprland/workspaces": {
@@ -51,8 +48,7 @@
     },
     "backlight": {
         "format": "<span color='#202020' bgcolor='#f6c657' > 󰞏 </span> {percent}%",
-        "tooltip": false,
-        "on-click-right": "~/.config/custom_scripts/wlsunset.sh"
+        "tooltip": false
     },
     "custom/language": {
         "exec": "~/.config/waybar/scripts/fcitx5-lang.sh",
@@ -70,9 +66,6 @@
         "on-click-right": "pavucontrol",
         "tooltip": false,
         "max-volume": 130
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "battery": {
         "interval": 1,

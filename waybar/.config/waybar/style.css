@@ -11,7 +11,7 @@
 
 window#waybar {
   color: #ebdbb2;
-  background: none;
+  background: #222222;
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 12pt;
   font-weight: 700;
@@ -20,8 +20,7 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  padding: 3pt;
-  background: #222222;
+  padding: 2pt;
 }
 
 #custom-rofi,
@@ -51,7 +50,6 @@ window#waybar {
 
 #workspaces button {
   color: #fff4d2;
-  background: #222222;
   border: 2pt solid #fff4d2;
   margin-right: 3pt;
   min-width: 15pt;
@@ -63,7 +61,6 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #222222;
   background: #d3869b;
   border-color: #b26286;
 }
@@ -78,7 +75,6 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-  color: #222222;
   border-color: #cc241d;
   background: #ea6962;
 }
@@ -88,7 +84,7 @@ window#waybar {
 }
 
 #tray {
-  border: 2pt solid #e78a4e;
+  border: 2pt solid #fff4d2;
   padding: 0 6pt;
 }
 
