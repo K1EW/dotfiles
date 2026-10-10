@@ -13,8 +13,7 @@ return {
             "html",     -- HTML
             "jsonls",   -- JSON
             "pyright",  -- Python
-            "marksman", -- Markdown
-            "ocamllsp"  -- OCaml
+            "marksman"  -- Markdown
         }
 
         require("mason-lspconfig").setup()
