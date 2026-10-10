@@ -27,6 +27,9 @@ hl.monitor({
     disabled = true,
 })
 EOF
+            hyprctl eval 'hl.config({ cursor = { invisible = true } })'
+            sleep 1
+            hyprctl eval 'hl.config({ cursor = { invisible = false } })'
             ;;
         "📺 Mirror Displays")
             hyprctl eval 'hl.monitor({ output = "eDP-1", mode = "1920x1080@60", position = "0x0", scale = 1 })'
@@ -48,10 +51,9 @@ hl.monitor({
     mirror = "eDP-1",
 })
 EOF
-            # Reset the mirrored output to clear a stale cursor image.
-            hyprctl eval 'hl.dispatch(hl.dsp.dpms({ action = "off", monitor = "HDMI-A-2" }))'
+            hyprctl eval 'hl.config({ cursor = { invisible = true } })'
             sleep 1
-            hyprctl eval 'hl.dispatch(hl.dsp.dpms({ action = "on", monitor = "HDMI-A-2" }))'
+            hyprctl eval 'hl.config({ cursor = { invisible = false } })'
             ;;
     esac
     exec env OK_SELECTION=1 pkill rofi
