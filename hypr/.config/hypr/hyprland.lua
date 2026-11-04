@@ -121,6 +121,10 @@ hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "u", group_a
 hl.bind(mainMod .. " + CTRL + H", hl.dsp.group.prev())
 hl.bind(mainMod .. " + CTRL + L", hl.dsp.group.next())
 
+-- Group Window Reordering (tab mode)
+hl.bind(mainMod .. " + CTRL + SHIFT + H", hl.dsp.group.move_window({ forward = false }))
+hl.bind(mainMod .. " + CTRL + SHIFT + L", hl.dsp.group.move_window({ forward = true }))
+
 -- Mouse Binds
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
