@@ -65,10 +65,13 @@ hl.device({
     name = "2.4g-mouse",
     sensitivity = -0.4,
 })
-
 hl.device({
     name = "2.4g-mouse-1",
     sensitivity = -0.4,
+})
+hl.device({
+    name = "keychron--keychron-link-km",
+    sensitivity = -0.6,
 })
 
 -------------------------------
